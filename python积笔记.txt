@@ -1,0 +1,13 @@
+下载安装包
+首先cmd下切换到D:\Program Files\python3.4\Scripts目录
+生产的包都在Lib\site-packages\里面
+pip install PySide  
+Lib\site-packages\PySide\designer.exe是pyside自带的可视化ide
+-------------------------------------------------------
+pip install Py2exe
+安装完成后执行
+1:编写清单setup.py
+from distutils.core import setup
+import py2exe
+setup(console=["将要转换的文件名称.py"])
+2:在cmd下执行python setup.py py2exe
